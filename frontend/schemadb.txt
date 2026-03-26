@@ -1,0 +1,67 @@
+-- WARNING: This schema is for context only and is not meant to be run.
+-- Table order and constraints may not be valid for execution.
+
+CREATE TABLE public.articles (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  author_id bigint NOT NULL,
+  category text,
+  title text NOT NULL,
+  content text,
+  external_link text,
+  cover_image_url text,
+  status text NOT NULL DEFAULT 'pending'::text,
+  CONSTRAINT articles_pkey PRIMARY KEY (id),
+  CONSTRAINT articles_author_id_fkey FOREIGN KEY (author_id) REFERENCES public.profiles(id)
+);
+CREATE TABLE public.comments (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  post_id bigint NOT NULL,
+  author_id bigint NOT NULL,
+  parent_id bigint,
+  content text NOT NULL,
+  CONSTRAINT comments_pkey PRIMARY KEY (id),
+  CONSTRAINT comments_author_id_fkey FOREIGN KEY (author_id) REFERENCES public.profiles(id),
+  CONSTRAINT comments_post_id_fkey FOREIGN KEY (post_id) REFERENCES public.community_posts(id),
+  CONSTRAINT comments_parent_id_fkey FOREIGN KEY (parent_id) REFERENCES public.comments(id),
+  CONSTRAINT comments_author_id_fkey1 FOREIGN KEY (author_id) REFERENCES public.profiles(id),
+  CONSTRAINT comments_post_id_fkey1 FOREIGN KEY (post_id) REFERENCES public.community_posts(id)
+);
+CREATE TABLE public.community_posts (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  author_id bigint NOT NULL,
+  title text NOT NULL,
+  content text,
+  status text NOT NULL DEFAULT 'pending'::text,
+  link text,
+  CONSTRAINT community_posts_pkey PRIMARY KEY (id),
+  CONSTRAINT community_posts_author_id_fkey FOREIGN KEY (author_id) REFERENCES public.profiles(id)
+);
+CREATE TABLE public.profiles (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  display_name text NOT NULL,
+  avatar_url text NOT NULL,
+  role text DEFAULT 'user'::text,
+  CONSTRAINT profiles_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.quizzes (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  created_at timestamp with time zone NOT NULL DEFAULT now(),
+  question text NOT NULL,
+  options jsonb NOT NULL,
+  correct_option_id text NOT NULL,
+  explanation text,
+  level bigint,
+  CONSTRAINT quizzes_pkey PRIMARY KEY (id)
+);
+CREATE TABLE public.user_progress (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  completed_at timestamp with time zone NOT NULL DEFAULT now(),
+  user_id bigint NOT NULL,
+  module_id bigint NOT NULL,
+  CONSTRAINT user_progress_pkey PRIMARY KEY (id),
+  CONSTRAINT user__user_id_fkey FOREIGN KEY (user_id) REFERENCES public.profiles(id)
+);

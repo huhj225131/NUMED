@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160" role="img" aria-label="Rosatom placeholder logo">
+  <rect width="480" height="160" rx="20" fill="#0f172a"/>
+  <circle cx="78" cy="80" r="34" fill="none" stroke="#14b8a6" stroke-width="8"/>
+  <circle cx="78" cy="80" r="12" fill="#14b8a6"/>
+  <text x="140" y="93" fill="#e2e8f0" font-size="44" font-family="Arial, sans-serif" font-weight="700">ROSATOM</text>
+</svg>

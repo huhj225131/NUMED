@@ -1,0 +1,550 @@
+{
+  "common": {
+    "brand": "NuMed",
+    "brandTagline": "",
+    "studentVersion": "Phiên bản học sinh - sinh viên"
+  },
+  "auth": {
+    "modalTitle": "Đăng nhập",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "quickLogin": "Đăng nhập nhanh (Demo)",
+    "expBadge": "Lv.{{level}} ({{current}}/200 EXP)"
+  },
+  "navbar": {
+    "menu": {
+      "explore": "Khám phá",
+      "wiki": "Wiki Tri thức",
+      "games": "Games",
+      "university": "Định hướng Trường & Học bổng",
+      "community": "Cộng đồng"
+    },
+    "language": {
+      "label": "Ngôn ngữ"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Y học hạt nhân: Khi hạt nhân tạo nên khác biệt trong y học",
+      "description": "Khám phá nghề nghiệp, tri thức và cơ hội học bổng theo cách trực quan, hiện đại, dành riêng cho học sinh và sinh viên Việt Nam.",
+      "ctaExplore": "Bắt đầu hành trình khám phá",
+      "ctaMentor": "Chat với AI Mentor"
+    },
+    "progress": {
+      "label": "Tiến độ nhiệm vụ khám phá nghề nghiệp",
+      "badge": "Huy hiệu đang mở: Người tiên phong khám phá Y học Hạt nhân"
+    },
+    "matchmaker": {
+      "title": "AI Career Matchmaker (Mockup)",
+      "description": "Bạn thích gì? Chọn sở thích để xem gợi ý nghề nghiệp.",
+      "options": {
+        "code": "Code",
+        "medical": "Y học",
+        "machine": "Máy móc",
+        "research": "Nghiên cứu",
+        "communication": "Truyền thông khoa học"
+      },
+      "results": {
+        "code": {
+          "title": "Gợi ý: AI Engineer trong Y tế",
+          "detail": "Bạn hợp với hướng phát triển mô hình AI hỗ trợ đọc ảnh PET/SPECT, tối ưu workflow bệnh viện và xây trợ lý chẩn đoán thông minh."
+        },
+        "medical": {
+          "title": "Gợi ý: Bác sĩ Y học Hạt nhân",
+          "detail": "Bạn có thể đi theo lộ trình y khoa, chuyên sâu chẩn đoán và điều trị bằng đồng vị phóng xạ, kết hợp kiến thức lâm sàng và công nghệ."
+        },
+        "machine": {
+          "title": "Gợi ý: Kỹ sư Thiết bị Y học Hạt nhân",
+          "detail": "Bạn phù hợp với thiết kế, vận hành và tối ưu máy PET/CT, SPECT/CT, đồng thời tham gia kiểm chuẩn và an toàn bức xạ."
+        },
+        "research": {
+          "title": "Gợi ý: Nhà nghiên cứu Y sinh - Hạt nhân",
+          "detail": "Bạn có thể phát triển chất đánh dấu phóng xạ mới, cải tiến quy trình chẩn đoán và làm việc trong viện nghiên cứu hoặc phòng lab đại học."
+        },
+        "communication": {
+          "title": "Gợi ý: Chuyên viên truyền thông khoa học y tế",
+          "detail": "Bạn phù hợp với việc biến kiến thức y học hạt nhân thành nội dung dễ hiểu cho học sinh, phụ huynh và cộng đồng."
+        }
+      }
+    },
+    "why": {
+      "title": "Tại sao chọn Y học Hạt nhân?",
+      "cards": {
+        "curiosity": {
+          "title": "Học khoa học theo cách thú vị",
+          "detail": "Bạn được thấy Vật lý, Hóa, Sinh không còn khô khan mà gắn trực tiếp với máy móc và hình ảnh thật trong bệnh viện."
+        },
+        "impact": {
+          "title": "Làm điều có ích từ sớm",
+          "detail": "Ngay từ thời học sinh, bạn đã có thể tham gia CLB STEM, dự án khoa học và tạo ra sản phẩm giúp cộng đồng khỏe mạnh hơn."
+        },
+        "future": {
+          "title": "Mở nhiều cánh cửa tương lai",
+          "detail": "Từ lĩnh vực này, bạn có thể đi tiếp sang bác sĩ, kỹ sư AI y tế, kỹ sư thiết bị, hoặc nhà nghiên cứu tùy thế mạnh của mình."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Lộ trình từ HUST đến toàn cầu",
+      "description": "Một ví dụ timeline cho sinh viên muốn đi từ nền tảng kỹ thuật tới môi trường quốc tế.",
+      "milestone": "Mốc {{index}}",
+      "items": [
+        {
+          "stage": "Năm 1-2 tại HUST",
+          "desc": "Xây nền tảng Toán, Vật lý, Lập trình và Tiếng Anh học thuật."
+        },
+        {
+          "stage": "Năm 3-4 chuyên sâu",
+          "desc": "Làm dự án AI y tế, xử lý ảnh, mô phỏng detector, tham gia lab y sinh."
+        },
+        {
+          "stage": "Trao đổi - học bổng",
+          "desc": "Ứng tuyển chương trình Nga/Đức, mở rộng nghiên cứu về Medical Physics."
+        },
+        {
+          "stage": "Sự nghiệp toàn cầu",
+          "desc": "Làm việc ở viện nghiên cứu, bệnh viện công nghệ cao hoặc startup healthtech."
+        }
+      ]
+    }
+  },
+  "game": {
+    "title": "NuMed Games",
+    "challengeTitle": "TRẠM THỬ THÁCH HẠT NHÂN",
+    "intro": "Vượt qua 3 câu đố khoa học để mở khóa huy hiệu tập sự theo phong cách game pixel 8-bit.",
+    "start": "BẮT ĐẦU",
+    "exit": "THOÁT",
+    "levelSelect": "CHỌN LEVEL",
+    "level": "LEVEL {{number}}",
+    "levelHint": "Level 2 và 3 đang khóa để giữ trải nghiệm cân bằng.",
+    "locked": "Khóa",
+    "advance": "TIẾN LÊN",
+    "questionLabel": "CÂU {{id}}",
+    "reveal": "Bí mật được bật mí",
+    "wrongReveal": "Rất tiếc, bạn đã nhiễm phóng xạ! GAME OVER",
+    "continue": "TIẾP TỤC",
+    "close": "ĐÓNG",
+    "home": "TRANG CHỦ",
+    "restart": "CHƠI LẠI TỪ ĐẦU",
+    "victory": "VICTORY!",
+    "victoryDesc": "Bạn đã vượt qua đủ 3 chướng ngại vật và chạm cờ đích.",
+    "gameOver": "GAME OVER",
+    "gameOverDesc": "Rất tiếc, bạn đã nhiễm phóng xạ!",
+    "questions": [
+      {
+        "id": 1,
+        "title": "Vụ án Quả chuối phát sáng",
+        "prompt": "Bạn có biết, mỗi khi ăn một quả chuối, cơ thể cũng nhận một lượng phóng xạ tự nhiên rất nhỏ. Nếu ăn 100 quả chuối cùng một lúc thì chuyện gì xảy ra?",
+        "options": [
+          { "key": "A", "text": "Bạn sẽ phát sáng trong bóng tối." },
+          { "key": "B", "text": "Bạn sẽ trở thành siêu anh hùng ngay lập tức." },
+          { "key": "C", "text": "Không có gì đáng sợ xảy ra, vì mức này vẫn rất nhỏ.", "correct": true },
+          { "key": "D", "text": "Bạn sẽ làm hỏng toàn bộ thiết bị điện tử xung quanh." }
+        ],
+        "explain": "Chúc mừng bạn đã không bị đánh lừa! Phóng xạ tự nhiên có ở khắp nơi. Y học hạt nhân dùng một lượng cực nhỏ thuốc thám tử, đủ để máy đọc tín hiệu chứ không phải để gây nguy hiểm như trong phim."
+      },
+      {
+        "id": 2,
+        "title": "Chiếc Kính thần của Bác sĩ",
+        "prompt": "Trong phòng chụp Y học hạt nhân (SPECT/PET), chiếc máy chụp đóng vai trò gì?",
+        "options": [
+          { "key": "A", "text": "Phát tia mạnh vào cơ thể để đốt tế bào lỗi ngay tại chỗ." },
+          { "key": "B", "text": "Chụp hình xương giống hệt X-quang thông thường." },
+          { "key": "C", "text": "Ghi lại tín hiệu phát ra từ thuốc thám tử bên trong cơ thể.", "correct": true },
+          { "key": "D", "text": "Đo nhiệt độ da để dự đoán bệnh." }
+        ],
+        "explain": "Bất ngờ chưa! Khác với X-quang, nguồn sáng ở đây nằm ngay bên trong bạn. Máy PET/SPECT giống chiếc kính thần giúp bác sĩ nhìn được hoạt động chức năng của mô và cơ quan."
+      },
+      {
+        "id": 3,
+        "title": "Siêu năng lực Tạm thời",
+        "prompt": "Sau khi được tiêm thuốc thám tử trong chẩn đoán Y học hạt nhân, siêu năng lực nào cơ thể bạn sẽ sở hữu tạm thời?",
+        "options": [
+          { "key": "A", "text": "Đọc được suy nghĩ của người khác." },
+          { "key": "B", "text": "Phát ra tín hiệu rất nhỏ để máy ghi nhận và tạo ảnh chức năng.", "correct": true },
+          { "key": "C", "text": "Biến cơ thể thành nam châm hút kim loại." },
+          { "key": "D", "text": "Miễn nhiễm hoàn toàn với mọi bệnh." }
+        ],
+        "explain": "Chính xác! Bạn tạm thời trở thành một ngọn hải đăng tí hon phát tín hiệu cho máy ghi nhận. Nhờ đó, bác sĩ có dữ liệu để đánh giá hoạt động sống bên trong cơ thể."
+      }
+    ]
+  },
+  "wiki": {
+    "title": "Wiki Tri thức",
+    "description": "Thư viện kiến thức nền tảng về đồng vị, kỹ thuật chẩn đoán và ứng dụng lâm sàng.",
+    "items": [
+      {
+        "isotope": "F-18",
+        "useCase": "PET/CT trong chẩn đoán ung thư và thần kinh",
+        "note": "Được dùng nhiều trong FDG-PET để quan sát chuyển hóa glucose."
+      },
+      {
+        "isotope": "Tc-99m",
+        "useCase": "SPECT cho tim mạch, xương, thận",
+        "note": "Là đồng vị phổ biến nhờ đặc tính phù hợp cho chẩn đoán."
+      },
+      {
+        "isotope": "I-131",
+        "useCase": "Điều trị bệnh tuyến giáp",
+        "note": "Vừa hỗ trợ chẩn đoán, vừa có vai trò điều trị mục tiêu."
+      }
+    ]
+  },
+  "career": {
+    "title": "Cộng đồng & Định hướng nghề",
+    "description": "Không gian chia sẻ trải nghiệm học tập, roadmap kỹ năng và cơ hội thực tập."
+  },
+  "community": {
+    "title": "Humans of Nuclear Medicine",
+    "subtitle": "Khám phá câu chuyện từ những người đang ngày đêm ứng dụng công nghệ hạt nhân để mang lại sự sống.",
+    "personas": [
+      {
+        "id": 1,
+        "role": "Bác sĩ Y học hạt nhân",
+        "name": "Dr. Linh Trần",
+        "workplace": "Bệnh viện K Trung ương, Hà Nội",
+        "quote": "Chúng tôi không chỉ đọc hình ảnh - chúng tôi đọc cơ hội sống của bệnh nhân.",
+        "story": "Mình từng nghĩ sẽ theo ngành lâm sàng thông thường. Nhưng lần đầu nhìn thấy hình ảnh PET scan của một bệnh nhân ung thư, mình nhận ra: có những thứ mắt thường không thấy, nhưng công nghệ có thể nhìn thấy rất rõ. Công việc của mình là đọc những tín hiệu đó - để phát hiện bệnh sớm hơn, chính xác hơn.",
+        "image": "images/bs.png"
+      },
+      {
+        "id": 2,
+        "role": "Nhà nghiên cứu công nghệ",
+        "name": "Nguyễn Hoàng",
+        "workplace": "Viện Năng lượng Nguyên tử VN (VINATOM)",
+        "quote": "Khoa học không phải là thứ xa vời - nó đang dần trở thành sự sống của ai đó.",
+        "story": "Mình không làm việc trực tiếp với bệnh nhân. Nhưng mỗi ngày trong phòng lab, mình biết rằng những gì mình nghiên cứu sẽ ảnh hưởng đến hàng ngàn người. Tụi mình đang phát triển các chất đánh dấu phóng xạ mới - giúp hình ảnh rõ hơn, liều thấp hơn, an toàn hơn.",
+        "image": "images/ncs.png"
+      },
+      {
+        "id": 3,
+        "role": "Kỹ sư hệ thống PET/CT",
+        "name": "Lê Tuấn",
+        "workplace": "Siemens Healthineers Vietnam",
+        "quote": "Một hệ thống chính xác có thể tạo ra một chẩn đoán chính xác - và điều đó có thể cứu sống.",
+        "story": "Mọi người thường nghĩ bác sĩ là người quan trọng nhất. Nhưng phía sau đó là cả một hệ thống máy móc cần hoạt động chính xác từng mili giây. Mình phụ trách đảm bảo máy PET/CT luôn hoạt động ổn định. Nếu máy sai lệch một chút, kết quả có thể bị ảnh hưởng.",
+        "image": "images/ks.png"
+      },
+      {
+        "id": 4,
+        "role": "Sinh viên Vật lý Y sinh",
+        "name": "Mai Anh",
+        "workplace": "Đại học Khoa học Tự nhiên - ĐHQGHN",
+        "quote": "Không cần phải giỏi ngay từ đầu - chỉ cần bạn tò mò đủ lâu.",
+        "story": "Mình từng rất sợ vật lý. Nhưng khi lên đại học, mình được học về cách vật lý được dùng trong y học. Lúc đó mình nhận ra: đây không phải là những con số vô nghĩa, mà là cách để hiểu và chữa bệnh cho con người.",
+        "image": "images/sv.png"
+      }
+    ],
+    "join": {
+      "title": "Tham gia cộng đồng",
+      "description": "Bạn không đi một mình trên hành trình này. Nếu bạn quan tâm đến Y học hạt nhân, hãy tham gia group 'Y học hạt nhân Việt Nam' trên Zalo để:",
+      "benefits": [
+        "Trao đổi kiến thức, tài liệu học tập",
+        "Hỏi đáp với những người đi trước",
+        "Cập nhật cơ hội học tập, nghiên cứu và thực tập",
+        "Kết nối với những người cùng đam mê"
+      ],
+      "scanText": "Quét QR để tham gia ngay"
+    }
+  },
+  "university": {
+    "title": "Định hướng Trường & Học bổng",
+    "description": "Danh sách mẫu để bạn phát triển thành module tư vấn trường phù hợp.",
+    "country": "Quốc gia",
+    "focus": "Thế mạnh",
+    "scholarship": "Gợi ý học bổng",
+    "items": [
+      {
+        "id": "hust",
+        "name": "Đại học Bách khoa Hà Nội (HUST)",
+        "country": "Việt Nam",
+        "focus": "Kỹ thuật y sinh, điện tử y tế, AI ứng dụng trong y khoa",
+        "scholarshipHint": "Học bổng khuyến khích học tập và quỹ nghiên cứu sinh viên."
+      },
+      {
+        "id": "tum",
+        "name": "Technical University of Munich (TUM)",
+        "country": "Đức",
+        "focus": "Medical Physics, Imaging Science, dữ liệu y tế",
+        "scholarshipHint": "DAAD và nhiều quỹ hợp tác nghiên cứu quốc tế."
+      },
+      {
+        "id": "mephi",
+        "name": "NRNU MEPhI",
+        "country": "Nga",
+        "focus": "Nuclear Engineering, Radiochemistry, Detector Physics",
+        "scholarshipHint": "Học bổng chính phủ và các chương trình liên kết song phương."
+      }
+    ]
+  },
+  "universitiesPage": {
+    "title": "Định hướng Trường & Học bổng",
+    "subtitle": "Khám phá các trường đào tạo mạnh về Y học hạt nhân, AI y tế và kỹ thuật y sinh để xây lộ trình phù hợp với mục tiêu của bạn.",
+    "filters": {
+      "all": "Tất cả",
+      "vn": "Việt Nam 🇻🇳",
+      "ru": "Nga 🇷🇺"
+    },
+    "major": "Ngành học",
+    "fit": "Phù hợp với",
+    "scholarship": "Học bổng",
+    "learnMore": "Tìm hiểu thêm"
+  },
+  "universities": [
+    {
+      "id": "tpu",
+      "name": "Tomsk Polytechnic University (TPU)",
+      "countryCode": "RU",
+      "country": "Nga",
+      "flag": "🇷🇺",
+      "major": "Medical Physics, Nuclear Engineering",
+      "fit": "Sinh viên thích hướng nghiên cứu quốc tế, kỹ thuật hạt nhân ứng dụng trong chẩn đoán và điều trị.",
+      "scholarship": "Học bổng Chính phủ Nga và các suất hỗ trợ nghiên cứu theo dự án.",
+      "link": "https://www.tpu.ru/en/",
+      "image": "images/tpu.png"
+    },
+    {
+      "id": "mephi",
+      "name": "NRNU MEPhI",
+      "countryCode": "RU",
+      "country": "Nga",
+      "flag": "🇷🇺",
+      "major": "Nuclear Medicine, Radiochemistry, Detector Physics",
+      "fit": "Sinh viên muốn đi sâu về vật lý hạt nhân, detector và công nghệ bức xạ trong y học.",
+      "scholarship": "Học bổng toàn phần theo diện hợp tác song phương và chương trình kỹ sư tài năng.",
+      "link": "https://eng.mephi.ru/",
+      "image": "images/nrnu.png"
+    },
+    {
+      "id": "hust",
+      "name": "Đại học Bách khoa Hà Nội (HUST)",
+      "countryCode": "VN",
+      "country": "Việt Nam",
+      "flag": "🇻🇳",
+      "major": "Kỹ thuật Y sinh, Điện tử Y tế, AI trong Y khoa",
+      "fit": "Học sinh yêu thích nền tảng kỹ thuật mạnh, muốn phát triển theo hướng AI y tế và thiết bị chẩn đoán.",
+      "scholarship": "Học bổng khuyến khích học tập, quỹ nghiên cứu sinh viên và tài trợ doanh nghiệp.",
+      "link": "https://hust.edu.vn/",
+      "image": "images/hust.png"
+    },
+    {
+      "id": "hcmut",
+      "name": "Đại học Bách khoa TP.HCM (HCMUT)",
+      "countryCode": "VN",
+      "country": "Việt Nam",
+      "flag": "🇻🇳",
+      "major": "Kỹ thuật Y sinh, Khoa học Dữ liệu Y tế",
+      "fit": "Sinh viên muốn kết hợp kỹ thuật, lập trình và dữ liệu để giải bài toán lâm sàng thực tế.",
+      "scholarship": "Học bổng tài năng, học bổng doanh nghiệp và chương trình trao đổi quốc tế.",
+      "link": "https://hcmut.edu.vn/",
+      "image": "images/hcmut.png"
+    },
+    {
+      "id": "hcmus",
+      "name": "Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (HCMUS)",
+      "countryCode": "VN",
+      "country": "Việt Nam",
+      "flag": "🇻🇳",
+      "major": "Vật lý Y khoa, Hóa học - Sinh học ứng dụng",
+      "fit": "Phù hợp với người thích nền tảng khoa học cơ bản vững để đi lên hướng nghiên cứu y học hạt nhân.",
+      "scholarship": "Học bổng học thuật, hỗ trợ nghiên cứu và quỹ phát triển khoa học trẻ.",
+      "link": "https://hcmus.edu.vn/",
+      "image": "images/hcmus.png"
+    },
+    {
+      "id": "vnu-hus",
+      "name": "Đại học Khoa học Tự nhiên - ĐHQGHN (VNU-HUS)",
+      "countryCode": "VN",
+      "country": "Việt Nam",
+      "flag": "🇻🇳",
+      "major": "Vật lý, Khoa học Hạt nhân, Kỹ thuật Y sinh",
+      "fit": "Sinh viên muốn theo con đường nghiên cứu và học cao học trong lĩnh vực bức xạ - hình ảnh y tế.",
+      "scholarship": "Học bổng nghiên cứu khoa học, quỹ học thuật và hỗ trợ từ đề tài cấp trường.",
+      "link": "https://hus.vnu.edu.vn/",
+      "image": "images/vnu-hus.png"
+    },
+    {
+      "id": "ump",
+      "name": "Đại học Y Dược TP.HCM (UMP)",
+      "countryCode": "VN",
+      "country": "Việt Nam",
+      "flag": "🇻🇳",
+      "major": "Y khoa, Chẩn đoán hình ảnh, Y học hạt nhân",
+      "fit": "Học sinh định hướng bác sĩ lâm sàng, muốn gắn công nghệ chẩn đoán hiện đại vào thực hành điều trị.",
+      "scholarship": "Học bổng khuyến học, hỗ trợ thực tập bệnh viện và học bổng tài trợ từ đơn vị y tế.",
+      "link": "https://ump.edu.vn/",
+      "image": "images/ump.png"
+    }
+  ],
+  "journey": {
+    "mapTitle": "Bản Đồ Hành Trình",
+    "exploreIsland": "Khám phá Đảo {{id}}",
+    "islandProgress": "Đảo {{current}} / {{total}}",
+    "videoPlaceholder": "Video Placeholder (sẽ chèn YouTube ở đây)",
+    "characterAlt": "Nhân vật",
+    "islands": [
+      {
+        "title": "Đảo Sinh Ra",
+        "content": "Chào mừng các bạn đã cập bến Đảo 1 – Đảo Sinh Ra. Đây chính là trạm tiếp tế năng lượng cho toàn bộ hành trình!. Tại đây, chúng ta sẽ bắt gặp những ông bố Moly 99 khổng lồ. Dù trông có vẻ trầm tư và chỉ thích ngồi yên một chỗ để phân rã từ từ, nhưng thực chất, mỗi ông bố Moly đều đang ấp ủ mầm mống của một người anh hùng cực kỳ năng động. Quá trình Lột xác kỳ diệu: Bên trong phòng thí nghiệm của đảo, một cuộc biến hình thầm lặng diễn ra mỗi giây. Khi ông bố Moly quyết định cho đi một phần năng lượng của mình thông qua quá trình phân rã, một siêu nhân nhí sẽ được sinh ra. Đó chính là Technetium-99m Khác với vẻ điềm tĩnh của bố, siêu nhân Tc-99m sở hữu một thanh máu (chu kỳ bán rã) tụt siêu nhanh – chỉ vỏn vẹn 6 giờ! Anh bạn này luôn ở trong trạng thái kích thích, sẵn sàng phát ra những tia sáng Gamma rực rỡ để giúp bác sĩ soi sáng mọi bí ẩn trong cơ thể. Chính vì siêu nhân này quá năng động và nhanh nhẹn, chúng ta phải lập tức đưa anh ấy đến bến xe tiếp theo trước khi năng lượng cạn kiệt!"
+      },
+      {
+        "title": "Trạm Chuyển Tiếp",
+        "content": "Dòng nước muối sinh lý 0.9% đóng vai trò như một chiếc xe đưa đón chạy xuyên qua cột chứa các nguyên tử để thực hiện cuộc chia tách kỳ diệu giữa hạt nhân bố Moly và Tc99m.Trong khi bố Moly vẫn bám chặt lấy vị trí của mình bên trong máy, các siêu nhân Tc-99m năng động sẽ nhanh chóng tan vào dòng nước để tách mình ra ngoài. Kết quả của màn vắt sữa này là một lọ dung dịch trong suốt chứa hàng tỷ thám tử ánh sáng đã sẵn sàng rời khỏi vòng tay của bố để lên đường cứu người."
+      },
+      {
+        "title": "Đảo Kết Bạn",
+        "content": "Chào mừng bạn đến với Đảo Kết Bạn, nơi khởi nguồn cho những phép màu cứu sống bệnh nhân! Ở đây, thám tử siêu nhân Tc99m tuy sở hữu chiếc đèn pin gamma sáng rực rỡ giúp nhìn xuyên thấu cơ thể, nhưng lại cực kỳ mù đường và dễ đi lang thang như một du khách mất bản đồ. Để thám tử Tc99m không bị lạc, chúng ta cần gắn anh ấy vào một chú Robot dẫn đường thông minh mang bộ não GPS siêu hạng (chất mang) để tạo ra một sự kết hợp hoàn hảo mang tên Dược chất phóng xạ. Nhờ có những Robot tận tụy này-ví dụ như chú Robot MDP chuyên tìm kiếm các vết nứt nhỏ, viêm xương hay ung thư di căn-thám tử Tc99m sẽ được nắm tay đưa đi thẳng đến đúng địa chỉ mục tiêu trong cơ thể một cách chính xác tuyệt đối!"
+      },
+      {
+        "title": "Đài Quan Sát",
+        "content": "Đây là điểm đến cuối cùng và quan trọng nhất của hành trình. Dược chất phóng xạ (thám tử phát sáng) - Tc99m được tiêm vào cơ thể bệnh nhân. Nó theo dòng máu tìm đến đúng cơ quan mục tiêu và bám lại đó. Tại đây, nó bật đèn pin (phát tia gamma) để báo cáo tình hình về trung tâm. Bí mật trên đảo: Chiếc máy quét SPECT khổng lồ sẽ tóm gọn những tín hiệu này và dựng thành một bản đồ 3D sống động về cơ quan bên trong, giúp bác sĩ chẩn đoán bệnh chính xác mà không cần phẫu thuật."
+      }
+    ],
+    "glossary": {
+      "title": "AI Mentor giải thích khái niệm",
+      "radiopharmaceutical": {
+        "term": "Dược chất phóng xạ",
+        "intro": "Hiểu đơn giản nhất, dược chất phóng xạ là một loại thuốc đặc biệt có thể phát ra tia bức xạ vô hình. Khác với thuốc thông thường, nó được dùng để vẽ bản đồ hoạt động cơ quan hoặc tiêu diệt chính xác tế bào bệnh.",
+        "partsTitle": "Về bản chất, dược chất phóng xạ là sự kết hợp của 2 phần không thể tách rời:",
+        "parts": [
+          "Phần 1 - Chiếc xe vận chuyển (chất mang sinh học): là hợp chất hóa học hoặc phân tử sinh học có khả năng tìm đúng cơ quan hoặc loại tế bào mục tiêu (tuyến giáp, xương, tim, tế bào ung thư).",
+          "Phần 2 - Nguồn phát tín hiệu (đồng vị phóng xạ): được gắn với chất mang, khi đến đích sẽ phát tia để máy PET/SPECT ghi nhận hình ảnh chẩn đoán hoặc dùng năng lượng đó để tiêu diệt khối u từ bên trong."
+        ],
+        "formula": "Dược chất phóng xạ = Chất mang (định vị) + Đồng vị phóng xạ (phát tín hiệu hoặc tiêu diệt)",
+        "conclusion": "Nhờ cơ chế này, bác sĩ có thể phát hiện bệnh rất sớm ở cấp độ tế bào, trước khi có thay đổi cấu trúc rõ rệt."
+      }
+    },
+    "buttons": {
+      "prev": "< Quay lại",
+      "next": "Tiếp tục >",
+      "readMore": "Xem thêm",
+      "readLess": "Thu gọn"
+    }
+  },
+  "quests": {
+    "title": "Nhiệm vụ hôm nay",
+    "level": "Lv.1 Tập sự",
+    "actionText": "Thực hiện ->",
+    "loginRequired": "Vui lòng đăng nhập để lưu điểm EXP!",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Hoàn thành 1 vòng 'Trạm thử thách hạt nhân'",
+        "reward": "+50 EXP",
+        "actionLink": "/games"
+      },
+      {
+        "id": 2,
+        "title": "Đọc 1 bài Wiki về Đồng vị Tc-99m",
+        "reward": "+20 EXP",
+        "actionLink": "/wiki"
+      },
+      {
+        "id": 3,
+        "title": "Hỏi AI Mentor 1 câu bất kỳ về y học",
+        "reward": "+10 EXP",
+        "actionLink": "#"
+      }
+    ]
+  },
+  "skillTree": {
+    "title": "Cây Kỹ Năng: Mở khóa Tương lai của bạn",
+    "detailLabel": "Chi tiết kỹ năng",
+    "tabs": {
+      "ai": "Kỹ sư AI Y tế",
+      "radiation": "Chuyên gia Phóng xạ"
+    },
+    "flows": {
+      "ai": [
+        {
+          "id": 1,
+          "title": "Nền tảng Toán & Lập trình",
+          "details": [
+            "Thành thạo Python, C++ và các thư viện tính khoa học (NumPy, SciPy).",
+            "Nắm vững Đại số tuyến tính, Xác suất thống kê để hiểu sâu bản chất mô hình.",
+            "Làm chủ cấu trúc dữ liệu, thuật toán tối ưu và các công cụ quản lý mã nguồn (Git, Docker)."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Xử lý Ảnh Y tế",
+          "details": [
+            "Xử lý thuần thục dữ liệu ảnh y tế chuẩn DICOM, NIfTI từ máy quét SPECT/CT.",
+            "Huấn luyện các mô hình phân vùng và phát hiện vật thể (như dòng họ U-Net, YOLO) để khoanh vùng khối u.",
+            "Tối ưu hóa phần cứng và tăng tốc suy diễn (inference) trên các hệ thống GPU chuyên dụng."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Digital Twin & RAG Agent",
+          "details": [
+            "Xây dựng hệ thống RAG Agent truy xuất tài liệu y khoa kết hợp hồ sơ bệnh án.",
+            "Tinh chỉnh (Fine-tune) các mô hình ngôn ngữ lớn (LLMs) để tự động hóa báo cáo y tế.",
+            "Thiết kế kiến trúc hệ thống mô phỏng Digital Twin để thử nghiệm phác đồ xạ trị cá nhân hóa."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "AI Engineer tại Bệnh viện/Startup",
+          "details": [
+            "Phát triển hệ thống AI hỗ trợ quyết định lâm sàng (CDSS), giảm tải cho bác sĩ.",
+            "Triển khai end-to-end các mô hình học máy vào thực tế bệnh viện, đảm bảo workflow trơn tru.",
+            "Đóng góp vào nghiên cứu công nghệ lõi, kiến tạo các giải pháp HealthTech đột phá."
+          ]
+        }
+      ],
+      "radiation": [
+        {
+          "id": 1,
+          "title": "Vật lý & Hóa học Phóng xạ",
+          "details": [
+            "Nắm vững cấu trúc nguyên tử, hạt nhân và các chuỗi phân rã phóng xạ.",
+            "Hiểu rõ cơ chế tương tác của bức xạ ion hóa với vật chất và mô sinh học.",
+            "Thực hành các kỹ thuật phòng lab hóa học và nguyên tắc an toàn bức xạ cơ bản."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Điều chế Dược chất Phóng xạ",
+          "details": [
+            "Vận hành thành thạo hệ thống Generator (như Mo-99/Tc-99m) để chiết xuất đồng vị.",
+            "Thực hiện quy trình đánh dấu (labeling) đồng vị phóng xạ với các hợp chất mang (Kits).",
+            "Kiểm tra chất lượng (QC) dược chất: độ tinh khiết hóa phóng xạ, sinh học và vật lý."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Ghi đo & An toàn Bức xạ",
+          "details": [
+            "Sử dụng các thiết bị ghi đo bức xạ chuyên dụng (buồng ion hóa, máy đếm nhấp nháy).",
+            "Đánh giá liều lượng bức xạ và áp dụng nghiêm ngặt các nguyên tắc bảo vệ ALARA.",
+            "Quản lý, phân loại và xử lý chất thải phóng xạ y tế theo tiêu chuẩn quốc tế."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Dược sĩ Phóng xạ tại Bệnh viện",
+          "details": [
+            "Phối hợp với bác sĩ để lên phác đồ dược chất tối ưu cho chẩn đoán và điều trị (Theranostics).",
+            "Quản lý chất lượng toàn diện (QA/QC) cho phòng thí nghiệm hạt nhân tại bệnh viện.",
+            "Tham gia nghiên cứu (R&D) các dòng dược chất phóng xạ thế hệ mới giúp phát hiện bệnh sớm hơn."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "title": "NuMed",
+    "description": "Nền tảng giúp học sinh tiếp cận Y học hạt nhân theo cách đơn giản và hấp dẫn — nơi các bạn có thể học, chơi, kết nối với sinh viên và chuyên gia, đồng thời khám phá con đường học tập trong tương lai.",
+    "collaborators": "ĐƠN VỊ PHỐI HỢP",
+    "copyright": "© 2026 VNCoreSix",
+    "sponsors": {
+      "rosatom": "Tập đoàn Rosatom",
+      "russianCenter": "Trung tâm Khoa học và Văn hóa Nga",
+      "moet": "Bộ Giáo dục và Đào tạo",
+      "most": "Bộ Khoa học và Công nghệ"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "medical-physic",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "dependencies": {
+    "@tawk.to/tawk-messenger-react": "^2.0.2"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "common": {
+    "brand": "NuMed",
+    "brandTagline": "",
+    "studentVersion": "Student Edition"
+  },
+  "auth": {
+    "modalTitle": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "login": "Sign in",
+    "register": "Sign up",
+    "quickLogin": "Quick Login (Demo)",
+    "expBadge": "Lv.{{level}} ({{current}}/200 EXP)"
+  },
+  "navbar": {
+    "menu": {
+      "explore": "Explore",
+      "wiki": "Knowledge Wiki",
+      "games": "Games",
+      "university": "University & Scholarship Guidance",
+      "community": "Community"
+    },
+    "language": {
+      "label": "Language"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Nuclear medicine: When the nucleus makes a difference in healthcare",
+      "description": "Explore careers, knowledge, and scholarship opportunities through a modern visual experience designed for Vietnamese students.",
+      "ctaExplore": "Start your exploration",
+      "ctaMentor": "Chat with AI Mentor"
+    },
+    "progress": {
+      "label": "Career exploration mission progress",
+      "badge": "Current badge: Nuclear Medicine Pioneer"
+    },
+    "matchmaker": {
+      "title": "AI Career Matchmaker (Mockup)",
+      "description": "What do you enjoy? Pick your interest to see a career suggestion.",
+      "options": {
+        "code": "Coding",
+        "medical": "Medicine",
+        "machine": "Machines",
+        "research": "Research",
+        "communication": "Science Communication"
+      },
+      "results": {
+        "code": {
+          "title": "Suggested: AI Engineer in Healthcare",
+          "detail": "You are a strong fit for building AI models for PET/SPECT image reading, optimizing hospital workflows, and creating clinical decision assistants."
+        },
+        "medical": {
+          "title": "Suggested: Nuclear Medicine Physician",
+          "detail": "You can follow a medical pathway focused on radionuclide-based diagnosis and therapy, combining clinical practice with advanced technology."
+        },
+        "machine": {
+          "title": "Suggested: Nuclear Medical Equipment Engineer",
+          "detail": "You may thrive in designing and operating PET/CT and SPECT/CT systems, as well as quality assurance and radiation safety."
+        },
+        "research": {
+          "title": "Suggested: Biomedical and Nuclear Research Scientist",
+          "detail": "You can work on new radiotracers, improve diagnostic workflows, and contribute to breakthroughs in university labs or research institutes."
+        },
+        "communication": {
+          "title": "Suggested: Healthcare Science Communication Specialist",
+          "detail": "You are a good fit for turning complex nuclear medicine concepts into clear, engaging content for students, families, and communities."
+        }
+      }
+    },
+    "why": {
+      "title": "Why choose Nuclear Medicine?",
+      "cards": {
+        "curiosity": {
+          "title": "Learn science in an exciting way",
+          "detail": "Physics, Chemistry, and Biology become vivid when you see how they directly connect to real medical images and devices."
+        },
+        "impact": {
+          "title": "Create impact early",
+          "detail": "Even in middle and high school, you can join STEM clubs and small projects that support healthier communities."
+        },
+        "future": {
+          "title": "Open many future pathways",
+          "detail": "From this field, you can grow into a doctor, healthcare AI engineer, imaging systems engineer, or research scientist."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Roadmap from HUST to the world",
+      "description": "A sample path for students going from technical foundations to international opportunities.",
+      "milestone": "Milestone {{index}}",
+      "items": [
+        {
+          "stage": "Year 1-2 at HUST",
+          "desc": "Build a strong base in Math, Physics, Programming, and academic English."
+        },
+        {
+          "stage": "Year 3-4 specialization",
+          "desc": "Work on AI healthcare projects, medical imaging pipelines, detector simulation, and lab practice."
+        },
+        {
+          "stage": "Exchange and scholarships",
+          "desc": "Apply to programs in Germany/Russia and broaden your research in Medical Physics."
+        },
+        {
+          "stage": "Global career",
+          "desc": "Work in research institutes, high-tech hospitals, or healthtech startups."
+        }
+      ]
+    }
+  },
+  "game": {
+    "title": "NuMed Games",
+    "challengeTitle": "NUCLEAR CHALLENGE STATION",
+    "intro": "Clear 3 science puzzles to unlock your trainee badge in an 8-bit pixel game vibe.",
+    "start": "START",
+    "exit": "EXIT",
+    "levelSelect": "SELECT LEVEL",
+    "level": "LEVEL {{number}}",
+    "levelHint": "Level 2 and 3 are temporarily locked for balanced progression.",
+    "locked": "Locked",
+    "advance": "MOVE FORWARD",
+    "questionLabel": "QUESTION {{id}}",
+    "reveal": "Secret Unlocked",
+    "wrongReveal": "Too bad, radiation got you! GAME OVER",
+    "continue": "CONTINUE",
+    "close": "CLOSE",
+    "home": "HOME",
+    "restart": "RESTART FROM BEGINNING",
+    "victory": "VICTORY!",
+    "victoryDesc": "You cleared all 3 obstacles and reached the finish flag.",
+    "gameOver": "GAME OVER",
+    "gameOverDesc": "Too bad, radiation got you! GAME OVER",
+    "questions": [
+      {
+        "id": 1,
+        "title": "The Glowing Banana Case",
+        "prompt": "Did you know that eating a banana gives your body a tiny amount of natural radiation? What happens if you eat 100 bananas at once?",
+        "options": [
+          { "key": "A", "text": "You will glow in the dark." },
+          { "key": "B", "text": "You instantly become a superhero." },
+          { "key": "C", "text": "Nothing scary; the exposure is still very small.", "correct": true },
+          { "key": "D", "text": "You will break all electronic devices nearby." }
+        ],
+        "explain": "Great choice. Natural radiation exists around us all the time. In nuclear medicine, tracer doses are carefully controlled: enough for imaging signals, not for dramatic movie effects."
+      },
+      {
+        "id": 2,
+        "title": "The Doctor’s Magic Lens",
+        "prompt": "In a nuclear medicine room (SPECT/PET), what is the scanner’s main role?",
+        "options": [
+          { "key": "A", "text": "It blasts strong rays into the body to burn unhealthy cells immediately." },
+          { "key": "B", "text": "It captures bones exactly like a regular X-ray." },
+          { "key": "C", "text": "It records signals emitted from the tracer inside the body.", "correct": true },
+          { "key": "D", "text": "It measures skin temperature to predict disease." }
+        ],
+        "explain": "Surprise. Unlike X-ray imaging, the signal source here is inside the body. PET/SPECT acts like a functional lens, revealing how tissues and organs are working."
+      },
+      {
+        "id": 3,
+        "title": "Temporary Superpower",
+        "prompt": "After receiving a tracer injection for nuclear medicine imaging, which temporary superpower does your body gain?",
+        "options": [
+          { "key": "A", "text": "Reading other people’s thoughts." },
+          { "key": "B", "text": "Emitting tiny signals that scanners can detect to build functional images.", "correct": true },
+          { "key": "C", "text": "Turning your body into a metal magnet." },
+          { "key": "D", "text": "Becoming completely immune to all diseases." }
+        ],
+        "explain": "Exactly. For a short time, your body becomes a tiny lighthouse emitting measurable signals. That data helps clinicians evaluate internal biological activity."
+      }
+    ]
+  },
+  "wiki": {
+    "title": "Knowledge Wiki",
+    "description": "A foundational library on isotopes, diagnostic techniques, and clinical applications.",
+    "items": [
+      {
+        "isotope": "F-18",
+        "useCase": "PET/CT for oncology and neurology diagnostics",
+        "note": "Widely used in FDG-PET to observe glucose metabolism."
+      },
+      {
+        "isotope": "Tc-99m",
+        "useCase": "SPECT for cardiology, bone, and renal imaging",
+        "note": "A common isotope due to its favorable diagnostic properties."
+      },
+      {
+        "isotope": "I-131",
+        "useCase": "Thyroid disease treatment",
+        "note": "Supports both diagnosis and targeted radionuclide therapy."
+      }
+    ]
+  },
+  "career": {
+    "title": "Community & Career Guidance",
+    "description": "A space to share learning experiences, skill roadmaps, and internship opportunities."
+  },
+  "community": {
+    "title": "Humans of Nuclear Medicine",
+    "subtitle": "Discover stories from people who apply nuclear technologies every day to help save lives.",
+    "personas": [
+      {
+        "id": 1,
+        "role": "Nuclear Medicine Doctor",
+        "name": "Dr. Linh Tran",
+        "workplace": "K National Hospital, Hanoi",
+        "quote": "We do not just read images - we read each patient's chance to survive.",
+        "story": "I once thought I would follow a conventional clinical path. But the first time I saw a PET scan image from a cancer patient, I realized there are things the naked eye cannot detect while technology can reveal them clearly. My work is to interpret those signals so diseases can be detected earlier and more accurately.",
+        "image": "images/bs.png"
+      },
+      {
+        "id": 2,
+        "role": "Technology Research Scientist",
+        "name": "Nguyen Hoang",
+        "workplace": "Vietnam Atomic Energy Institute (VINATOM)",
+        "quote": "Science is not distant - it is gradually becoming someone else's lifeline.",
+        "story": "I do not work directly with patients. But every day in the lab, I know what I research can impact thousands of lives. Our team is developing new radiotracers that deliver clearer images, lower doses, and better safety.",
+        "image": "images/ncs.png"
+      },
+      {
+        "id": 3,
+        "role": "PET/CT Systems Engineer",
+        "name": "Le Tuan",
+        "workplace": "Siemens Healthineers Vietnam",
+        "quote": "A precise system enables a precise diagnosis - and that can save lives.",
+        "story": "People often think doctors are the only key factor. But behind every diagnosis is a full technical system that must operate accurately down to milliseconds. I am responsible for keeping PET/CT systems stable and reliable. Even a slight deviation can affect results.",
+        "image": "images/ks.png"
+      },
+      {
+        "id": 4,
+        "role": "Biomedical Physics Student",
+        "name": "Mai Anh",
+        "workplace": "VNU University of Science, Hanoi",
+        "quote": "You do not need to be great from day one - you only need to stay curious long enough.",
+        "story": "I used to be afraid of physics. But in university, I learned how physics is applied in medicine. That is when I realized these are not meaningless numbers - they are tools to understand diseases and help heal people.",
+        "image": "images/sv.png"
+      }
+    ],
+    "join": {
+      "title": "Join the Community",
+      "description": "You are not alone on this journey. If you are interested in Nuclear Medicine, join the 'Vietnam Nuclear Medicine' Zalo group to:",
+      "benefits": [
+        "Exchange knowledge and study materials",
+        "Ask questions with mentors and senior professionals",
+        "Get updates on learning, research, and internship opportunities",
+        "Connect with people who share your passion"
+      ],
+      "scanText": "Scan the QR code to join now"
+    }
+  },
+  "university": {
+    "title": "University & Scholarship Guidance",
+    "description": "A sample list you can grow into a personalized university recommendation module.",
+    "country": "Country",
+    "focus": "Strength",
+    "scholarship": "Scholarship hint",
+    "items": [
+      {
+        "id": "hust",
+        "name": "Hanoi University of Science and Technology (HUST)",
+        "country": "Vietnam",
+        "focus": "Biomedical engineering, medical electronics, and AI in healthcare",
+        "scholarshipHint": "Merit scholarships and student research funds."
+      },
+      {
+        "id": "tum",
+        "name": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "focus": "Medical Physics, Imaging Science, and health data",
+        "scholarshipHint": "DAAD and multiple international research funding tracks."
+      },
+      {
+        "id": "mephi",
+        "name": "NRNU MEPhI",
+        "country": "Russia",
+        "focus": "Nuclear Engineering, Radiochemistry, and Detector Physics",
+        "scholarshipHint": "Government scholarships and bilateral partnership programs."
+      }
+    ]
+  },
+  "universitiesPage": {
+    "title": "University & Scholarship Guidance",
+    "subtitle": "Explore universities with strong tracks in Nuclear Medicine, Healthcare AI, and Biomedical Engineering to design your best-fit pathway.",
+    "filters": {
+      "all": "All",
+      "vn": "Vietnam 🇻🇳",
+      "ru": "Russia 🇷🇺"
+    },
+    "major": "Major",
+    "fit": "Best fit for",
+    "scholarship": "Scholarship",
+    "learnMore": "Learn more"
+  },
+  "universities": [
+    {
+      "id": "tpu",
+      "name": "Tomsk Polytechnic University (TPU)",
+      "countryCode": "RU",
+      "country": "Russia",
+      "flag": "🇷🇺",
+      "major": "Medical Physics, Nuclear Engineering",
+      "fit": "Students aiming for international research in nuclear technologies for diagnosis and therapy.",
+      "scholarship": "Russian Government scholarships and project-based research funding.",
+      "link": "https://www.tpu.ru/en/",
+      "image": "images/tpu.png"
+    },
+    {
+      "id": "mephi",
+      "name": "NRNU MEPhI",
+      "countryCode": "RU",
+      "country": "Russia",
+      "flag": "🇷🇺",
+      "major": "Nuclear Medicine, Radiochemistry, Detector Physics",
+      "fit": "Students who want deep expertise in nuclear physics, detectors, and radiation technology in medicine.",
+      "scholarship": "Full scholarships via bilateral cooperation and excellence tracks.",
+      "link": "https://eng.mephi.ru/",
+      "image": "images/nrnu.png"
+    },
+    {
+      "id": "hust",
+      "name": "Hanoi University of Science and Technology (HUST)",
+      "countryCode": "VN",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "major": "Biomedical Engineering, Medical Electronics, AI in Healthcare",
+      "fit": "Learners who want a strong engineering base and AI-driven clinical technology applications.",
+      "scholarship": "Merit scholarships, student research grants, and industry-funded awards.",
+      "link": "https://hust.edu.vn/",
+      "image": "images/hust.png"
+    },
+    {
+      "id": "hcmut",
+      "name": "Ho Chi Minh City University of Technology (HCMUT)",
+      "countryCode": "VN",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "major": "Biomedical Engineering, Healthcare Data Science",
+      "fit": "Students who want to combine engineering, coding, and data for real clinical problems.",
+      "scholarship": "Talent scholarships, corporate scholarships, and exchange opportunities.",
+      "link": "https://hcmut.edu.vn/",
+      "image": "images/hcmut.png"
+    },
+    {
+      "id": "hcmus",
+      "name": "University of Science - VNUHCM (HCMUS)",
+      "countryCode": "VN",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "major": "Medical Physics, Applied Chemistry and Biology",
+      "fit": "Students who prefer strong basic science foundations before specializing in nuclear medicine research.",
+      "scholarship": "Academic scholarships, research support, and young scientist funds.",
+      "link": "https://hcmus.edu.vn/",
+      "image": "images/hcmus.png"
+    },
+    {
+      "id": "vnu-hus",
+      "name": "University of Science - VNU Hanoi (VNU-HUS)",
+      "countryCode": "VN",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "major": "Physics, Nuclear Science, Biomedical Engineering",
+      "fit": "Students targeting research pathways and graduate studies in radiation and medical imaging.",
+      "scholarship": "Research scholarships, academic funds, and faculty-led grant opportunities.",
+      "link": "https://hus.vnu.edu.vn/",
+      "image": "images/vnu-hus.png"
+    },
+    {
+      "id": "ump",
+      "name": "University of Medicine and Pharmacy at Ho Chi Minh City (UMP)",
+      "countryCode": "VN",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "major": "Medicine, Diagnostic Imaging, Nuclear Medicine",
+      "fit": "Students oriented toward clinical medicine who want to integrate advanced imaging technologies into care.",
+      "scholarship": "Merit scholarships, hospital internship support, and medical partner sponsorships.",
+      "link": "https://ump.edu.vn/",
+      "image": "images/ump.png"
+    }
+  ],
+  "journey": {
+    "mapTitle": "Journey Map",
+    "exploreIsland": "Explore Island {{id}}",
+    "islandProgress": "Island {{current}} / {{total}}",
+    "videoPlaceholder": "Video Placeholder (YouTube embed will be added here)",
+    "characterAlt": "Character",
+    "islands": [
+      {
+        "title": "Birth Island",
+        "content": "Welcome to Island 1 – The Birth Island! This is the energy supply station for our whole journey. Here, we will meet the giant Papa Moly-99s. Even though they look quiet and just like to sit still to decay slowly, each Papa Moly is actually holding a super active little hero inside! Inside the island's lab, a silent magical change happens every second. When Papa Moly decides to give away some of his energy through decay, a little superhero is born. That is Technetium-99m! Unlike his calm dad, superhero Tc-99m has a health bar (half-life) that drops super fast – in just 6 hours! This little guy is always in an excited state, ready to shoot out bright Gamma rays to help doctors light up all the mysteries inside the body. Because this superhero is so active and quick, we must take him to the next bus stop right away before his energy runs out!"
+      },
+      {
+        "title": "Transfer Station",
+        "content": "The 0.9% saline water acts like a shuttle bus running through the column of atoms to create a magical separation between Papa Moly and Tc-99m. While Papa Moly holds tightly to his spot inside the machine, the active Tc-99m superheroes quickly dissolve into the water stream to get out. The result of this milking process is a clear bottle of liquid holding billions of light detectives, ready to leave their papa's arms and set off on a journey to save people!"
+      },
+      {
+        "title": "Friendship Island",
+        "content": "Welcome to Friendship Island, where miracles that save patients begin! Here, even though superhero detective Tc-99m has a bright gamma flashlight to see through the body, he gets lost very easily and wanders around like a tourist without a map. To keep detective Tc-99m from getting lost, we need to attach him to a smart guide Robot with a super GPS brain (a carrier) to make a perfect team called a Radiopharmaceutical. Thanks to these helpful Robots—like the MDP Robot who is an expert at finding tiny bone cracks, infections, or bone cancer—detective Tc-99m will be guided by the hand straight to the exact target address in the body with perfect accuracy!"
+      },
+      {
+        "title": "Observation Deck",
+        "content": "This is the final and most important stop of our journey! Our glowing detective, the radiopharmaceutical Tc-99m, now enters the patient's body. It follows the bloodstream to find the exact target organ and stays right there. Here, it turns on its gamma flashlight to report the situation back to base. The island's secret: A giant SPECT scanner will catch these glowing signals and build a vivid 3D map of the inside organs. This helps doctors find out exactly what is wrong and heal the patient perfectly without any surgery!"
+      }
+    ],
+    "glossary": {
+      "title": "AI Mentor Concept Box",
+      "radiopharmaceutical": {
+        "term": "Radiopharmaceutical",
+        "intro": "In the simplest terms, a radiopharmaceutical is a special type of drug that emits invisible radiation. Unlike conventional medicines, it is used to map organ activity or precisely destroy diseased cells.",
+        "partsTitle": "In essence, a radiopharmaceutical is a combination of two inseparable components:",
+        "parts": [
+          "Part 1 - Transport vehicle (biological carrier): a chemical compound or biological molecule that automatically targets specific organs or cell types (thyroid, bones, heart, cancer cells).",
+          "Part 2 - Signal source (radioisotope): firmly attached to the carrier; once it reaches the destination, it emits radiation that PET/SPECT can capture for diagnosis, or uses that energy for tumor destruction from within."
+        ],
+        "formula": "Radiopharmaceutical = Carrier (targeting) + Radioisotope (signaling or therapy)",
+        "conclusion": "This combination allows doctors to detect disease very early at the cellular level, before clear structural changes appear."
+      }
+    },
+    "buttons": {
+      "prev": "< Previous",
+      "next": "Continue >",
+      "readMore": "Read more",
+      "readLess": "Show less"
+    }
+  },
+  "quests": {
+    "title": "Today's Quests",
+    "level": "Lv.1 Novice",
+    "actionText": "Start ->",
+    "loginRequired": "Please login to save your EXP!",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Complete 1 round of 'Nuclear Challenge Station'",
+        "reward": "+50 EXP",
+        "actionLink": "/games"
+      },
+      {
+        "id": 2,
+        "title": "Read 1 Wiki article on Tc-99m Isotope",
+        "reward": "+20 EXP",
+        "actionLink": "/wiki"
+      },
+      {
+        "id": 3,
+        "title": "Ask the AI Mentor any medical question",
+        "reward": "+10 EXP",
+        "actionLink": "#"
+      }
+    ]
+  },
+  "skillTree": {
+    "title": "Skill Tree: Unlock Your Future",
+    "detailLabel": "Skill details",
+    "tabs": {
+      "ai": "AI Healthcare Engineer",
+      "radiation": "Radiation Specialist"
+    },
+    "flows": {
+      "ai": [
+        {
+          "id": 1,
+          "title": "Math & Programming Foundations",
+          "details": [
+            "Master Python, C++, and scientific computing libraries (NumPy, SciPy).",
+            "Build a strong foundation in Linear Algebra and Probability & Statistics to understand model behavior deeply.",
+            "Develop solid skills in data structures, optimization algorithms, and engineering tools (Git, Docker)."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Medical Image Processing",
+          "details": [
+            "Process medical imaging data in DICOM and NIfTI formats from SPECT/CT systems.",
+            "Train segmentation and object detection models (U-Net family, YOLO) for lesion and tumor localization.",
+            "Optimize hardware utilization and accelerate inference on specialized GPU infrastructure."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Digital Twin & RAG Agent",
+          "details": [
+            "Build RAG agent pipelines that retrieve medical literature and combine it with patient records.",
+            "Fine-tune large language models (LLMs) for automated clinical report generation.",
+            "Design Digital Twin simulation architectures to test personalized radiotherapy strategies."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "AI Engineer at Hospital/Startup",
+          "details": [
+            "Develop AI-powered clinical decision support systems (CDSS) to reduce physician workload.",
+            "Deploy end-to-end machine learning systems in hospital settings with reliable workflow integration.",
+            "Contribute to core technology research and build breakthrough HealthTech solutions."
+          ]
+        }
+      ],
+      "radiation": [
+        {
+          "id": 1,
+          "title": "Radiation Physics & Radiochemistry",
+          "details": [
+            "Master atomic structure, nuclear structure, and radioactive decay chains.",
+            "Understand how ionizing radiation interacts with matter and biological tissues.",
+            "Practice core radiochemistry lab techniques and foundational radiation safety principles."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Radiopharmaceutical Preparation",
+          "details": [
+            "Operate Generator systems (such as Mo-99/Tc-99m) to elute medical radioisotopes.",
+            "Perform radiolabeling workflows that bind radioisotopes to carrier compounds (kits).",
+            "Run radiopharmaceutical quality control (QC): radiochemical purity, biological quality, and physical parameters."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Radiation Measurement & Safety",
+          "details": [
+            "Use specialized radiation measurement instruments (ionization chamber, scintillation counters).",
+            "Evaluate dose exposure and apply ALARA radiation protection principles rigorously.",
+            "Manage, classify, and dispose of medical radioactive waste according to international standards."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Hospital Radiopharmacist",
+          "details": [
+            "Collaborate with physicians to design optimal radiopharmaceutical protocols for diagnosis and therapy (Theranostics).",
+            "Lead comprehensive QA/QC operations for nuclear medicine laboratory workflows in hospitals.",
+            "Participate in R&D of next-generation radiopharmaceuticals for earlier and more accurate disease detection."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "title": "NuMed",
+    "description": "A career guidance and deep-learning platform on Nuclear Medicine for high school and university students in Vietnam.",
+    "collaborators": "COLLABORATING PARTNERS",
+    "copyright": "© 2026 VNCoreSix",
+    "sponsors": {
+      "rosatom": "Rosatom",
+      "russianCenter": "Russian Center of Science and Culture",
+      "moet": "Ministry of Education and Training",
+      "most": "Ministry of Science and Technology"
+    }
+  }
+}
