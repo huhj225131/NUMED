@@ -417,8 +417,8 @@
       }
     },
     "buttons": {
-      "prev": "< Quay lại",
-      "next": "Tiếp tục >",
+      "prev": "Quay lại",
+      "next": "Tiếp tục",
       "readMore": "Xem thêm",
       "readLess": "Thu gọn"
     }

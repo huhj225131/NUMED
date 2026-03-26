@@ -345,8 +345,8 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
       </div>
 
       {showQuestion ? (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-950/65 px-4 backdrop-blur-sm">
-          <div className="quiz-card retro-transition w-full max-w-3xl p-5 md:p-6">
+        <div className="fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto bg-slate-950/65 px-4 py-6 backdrop-blur-sm md:items-center">
+          <div className="quiz-card retro-transition w-full max-w-3xl max-h-[88vh] overflow-y-auto p-5 md:p-6">
             <p className="quiz-index">{t('game.questionLabel', { id: currentQuestion.id })}</p>
             <h3 className="quiz-title mt-3">{currentQuestion.title}</h3>
             <p className="quiz-prompt mt-4">{currentQuestion.prompt}</p>
@@ -376,10 +376,13 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
                 <p className={`secret-title ${answerCorrect ? 'text-green-900' : 'text-red-900'}`}>
                   {answerCorrect ? t('game.reveal') : t('game.wrongReveal')}
                 </p>
-                <p className="secret-text mt-3">{answerCorrect ? currentQuestion.explain : getWrongFeedback()}</p>
-                <button type="button" className="start-brick mt-4" onClick={onContinueAfterAnswer}>
-                  {answerCorrect ? t('game.continue') : t('game.close')}
-                </button>
+                <div className="mt-3 max-h-56 overflow-y-auto pr-1">
+                  <p className="secret-text whitespace-pre-line">{answerCorrect ? currentQuestion.explain : getWrongFeedback()}</p>
+
+                  <button type="button" className="start-brick mt-4" onClick={onContinueAfterAnswer}>
+                    {answerCorrect ? t('game.continue') : (i18n.language === 'vi' ? 'Thoát ra' : 'Exit')}
+                  </button>
+                </div>
               </div>
             ) : null}
           </div>

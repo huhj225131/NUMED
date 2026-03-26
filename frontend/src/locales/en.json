@@ -417,8 +417,8 @@
       }
     },
     "buttons": {
-      "prev": "< Previous",
-      "next": "Continue >",
+      "prev": "Previous",
+      "next": "Continue",
       "readMore": "Read more",
       "readLess": "Show less"
     }
