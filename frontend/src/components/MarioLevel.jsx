@@ -1,13 +1,49 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Heart, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import Player from './Player'
 
 const obstaclePositions = [26, 50, 74]
 const CASTLE_IMAGE = 'https://placehold.co/760x260/3aa6ff/ffffff/png?text=VICTORY+CASTLE'
 
+const HARD_WRONG_FEEDBACK_VI = {
+  1: {
+    A: "Ồ! Bạn đang mơ về một bộ phim siêu anh hùng rồi. Dù Kali-40 là đồng vị phóng xạ thật đấy, nhưng nó không đủ sức biến bạn thành một chiếc 'đèn lồng' đâu. Thử lại để xem cơ thể chúng ta thực sự phản ứng thế nào nhé!",
+    B: 'Tiếc quá! Nếu ăn chuối mà nhìn được xuyên tường thì các bác sĩ đã không cần đến máy SPECT/CT đắt tiền rồi. Câu trả lời thực tế hơn nhiều, thử lại xem nào!',
+    D: "Bình tĩnh nào! Bạn không 'đáng sợ' đến thế đâu. Lượng phóng xạ trong chuối nhỏ đến mức máy đo nhạy nhất cũng khó lòng phát hiện ra trên cơ thể bạn. Đừng lo lắng quá, chọn lại nhé!",
+  },
+  2: {
+    A: "Nhầm rồi nhé! Đó là nguyên lý của máy X-quang hoặc CT thông thường. Trong Y học hạt nhân, chiếc máy này lại cực kỳ 'hiền lành' vì nó không chủ động phát ra tia gì cả. Thử lại xem nó thực sự làm gì nhé!",
+    B: "Gần đúng rồi, nhưng chưa chính xác hoàn toàn! Nó không phải là một chiếc camera chụp ảnh bằng ánh sáng thường mà chúng ta thấy. Nó đang chờ đợi một thứ 'vô hình' hơn nhiều. Đoán lại xem!",
+    D: "Nghe có vẻ rất 'ngầu' nhưng đây không phải là phim viễn tưởng đâu! Máy chụp chỉ làm nhiệm vụ 'quan sát' thôi chứ không dùng lực hút nào cả. Thử chọn phương án khác xem sao!",
+  },
+  3: {
+    A: "Ước gì điều này là thật nhỉ? Tiếc là dược chất phóng xạ chỉ giúp bác sĩ 'thấy' bạn rõ hơn chứ không giúp bạn 'biến mất' đâu. Thử lại nhé!",
+    C: 'Bạn đang nhầm sang năng lượng hạt nhân của tàu ngầm hay nhà máy điện rồi! Lượng năng lượng y tế này chỉ đủ để phát tín hiệu thôi, không đủ để biến bạn thành The Flash đâu. Thử lại nào!',
+    D: "Về vẻ ngoài thì đúng là bạn trông vẫn bình thường, nhưng bên trong cơ thể bạn lúc này đang có một 'bí mật' mà máy móc có thể nhận ra đấy. Chọn lại để khám phá bí mật đó là gì nhé!",
+  },
+}
+
+const HARD_WRONG_FEEDBACK_EN = {
+  1: {
+    A: "Whoa, you are imagining a superhero movie. Potassium-40 is a real radioactive isotope, but it is nowhere near strong enough to turn you into a glowing lantern. Try again to see how the body actually responds.",
+    B: 'Nice try. If bananas gave x-ray vision, doctors would not need expensive SPECT/CT scanners. The real answer is much more practical, so give it another shot.',
+    D: "Take it easy. You are not a walking radiation hazard. The radioactivity in bananas is so tiny that even sensitive detectors can barely notice it in your body. No need to panic, choose again.",
+  },
+  2: {
+    A: "Not quite. That is the principle of standard X-ray or CT imaging. In nuclear medicine, this scanner is actually passive because it does not actively emit that radiation itself. Try again and think about what it really does.",
+    B: 'Close, but not fully correct. It is not a regular light camera taking photos like the ones we use every day. It is waiting for something much more invisible. Guess again.',
+    D: "Sounds cool, but this is not science fiction. The scanner only observes and records signals; it does not use magnetic force to pull cells. Try another option.",
+  },
+  3: {
+    A: "If only that were true. Radiopharmaceuticals help doctors see you more clearly, but they do not make you disappear. Try again.",
+    C: "You are mixing this up with nuclear power plants or submarines. Medical tracer energy is only enough to emit detectable signals, not enough to turn you into The Flash. Try again.",
+    D: "From the outside you still look normal, but inside your body there is a temporary 'secret' that imaging systems can detect. Choose again to discover what that secret is.",
+  },
+}
+
 export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [currentObstacle, setCurrentObstacle] = useState(0)
   const [playerState, setPlayerState] = useState('idle')
   const [showQuestion, setShowQuestion] = useState(false)
@@ -30,6 +66,53 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
   const progress = ((currentObstacle + 1) / totalQuestions) * 100
 
   const currentQuestion = useMemo(() => questions[activeQuestionIndex], [questions, activeQuestionIndex])
+
+  const getWrongFeedback = () => {
+    if (!currentQuestion || !selectedOption) {
+      return ''
+    }
+
+    if (i18n.language === 'vi') {
+      const customMessage = HARD_WRONG_FEEDBACK_VI[currentQuestion.id]?.[selectedOption]
+      if (customMessage) {
+        return customMessage
+      }
+    } else {
+      const customMessage = HARD_WRONG_FEEDBACK_EN[currentQuestion.id]?.[selectedOption]
+      if (customMessage) {
+        return customMessage
+      }
+    }
+
+    return currentQuestion.explain
+  }
+
+  const playWrongBeep = () => {
+    const AudioContextCtor = window.AudioContext || window.webkitAudioContext
+
+    if (!AudioContextCtor) {
+      return
+    }
+
+    const audioContext = new AudioContextCtor()
+    const oscillator = audioContext.createOscillator()
+    const gain = audioContext.createGain()
+
+    oscillator.type = 'triangle'
+    oscillator.frequency.setValueAtTime(420, audioContext.currentTime)
+    gain.gain.setValueAtTime(0.0001, audioContext.currentTime)
+    gain.gain.exponentialRampToValueAtTime(0.06, audioContext.currentTime + 0.01)
+    gain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 0.2)
+
+    oscillator.connect(gain)
+    gain.connect(audioContext.destination)
+    oscillator.start()
+    oscillator.stop(audioContext.currentTime + 0.21)
+
+    schedule(() => {
+      audioContext.close()
+    }, 260)
+  }
 
   useEffect(() => {
     return () => {
@@ -89,6 +172,10 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
     if (selectedOption) return
     setSelectedOption(option.key)
     setAnswerCorrect(option.correct === true)
+
+    if (!option.correct) {
+      playWrongBeep()
+    }
   }
 
   const onContinueAfterAnswer = () => {
@@ -199,13 +286,6 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
               <span>{Math.min(100, Math.round(progress))}%</span>
             </div>
 
-            <div className="retro-health-hearts">
-              {Array.from({ length: totalQuestions }).map((_, idx) => (
-                <span key={`heart-${idx}`} className={`heart-pixel ${idx <= currentObstacle ? 'heart-on' : ''}`}>
-                  <Heart size={16} />
-                </span>
-              ))}
-            </div>
           </div>
 
           <div className="platform-stage mt-6 w-full max-w-5xl">
@@ -296,7 +376,7 @@ export default function MarioLevel({ questions, onExitLevel, onExitHome }) {
                 <p className={`secret-title ${answerCorrect ? 'text-green-900' : 'text-red-900'}`}>
                   {answerCorrect ? t('game.reveal') : t('game.wrongReveal')}
                 </p>
-                <p className="secret-text mt-3">{currentQuestion.explain}</p>
+                <p className="secret-text mt-3">{answerCorrect ? currentQuestion.explain : getWrongFeedback()}</p>
                 <button type="button" className="start-brick mt-4" onClick={onContinueAfterAnswer}>
                   {answerCorrect ? t('game.continue') : t('game.close')}
                 </button>

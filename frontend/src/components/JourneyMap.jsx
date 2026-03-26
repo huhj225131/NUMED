@@ -15,7 +15,7 @@ const journeyVideoByIsland = Object.fromEntries(
   })
 )
 
-const CONTENT_PREVIEW_LENGTH = 230
+const CONTENT_PREVIEW_LENGTH = 420
 
 export default function JourneyMap({ onClose }) {
   const { t } = useTranslation()
@@ -253,8 +253,8 @@ export default function JourneyMap({ onClose }) {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <div className="animate-fade-in bg-white text-slate-800 p-5 pr-20 rounded-2xl shadow-xl relative min-h-[188px] w-full max-w-sm">
+          <div className="flex h-full flex-col gap-4">
+            <div className="animate-fade-in relative flex h-full min-h-[24rem] w-full flex-col rounded-2xl bg-white p-5 pr-20 text-slate-800 shadow-xl">
               <div className="absolute -bottom-3 right-8 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white" />
               <img
                 src={characterImg}
@@ -262,8 +262,26 @@ export default function JourneyMap({ onClose }) {
                 className="absolute bottom-1 right-1 h-24 w-24 object-contain drop-shadow-lg"
               />
 
-              <div className="max-h-48 overflow-y-auto pr-1">
-                <p className="text-sm leading-relaxed">{renderContentWithKeyword(previewText)}</p>
+              <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+                <p className="whitespace-pre-line text-base leading-relaxed">{renderContentWithKeyword(previewText)}</p>
+
+                {isGlossaryIsland && showGlossary && (
+                  <div className="mt-3 rounded-xl border border-teal-200 bg-teal-50 p-3 text-left text-xs text-slate-700">
+                    <p className="flex items-center gap-2 font-semibold text-teal-700">
+                      <Bot size={14} />
+                      {glossaryTitle}
+                    </p>
+                    <p className="mt-2 leading-relaxed">{glossaryIntro}</p>
+                    <p className="mt-2 font-semibold">{glossaryPartsTitle}</p>
+                    <ul className="mt-1 space-y-1.5 pl-4">
+                      {safeGlossaryParts.map((part, idx) => (
+                        <li key={`${part}-${idx}`} className="list-disc leading-relaxed">{part}</li>
+                      ))}
+                    </ul>
+                    <p className="mt-2 rounded-md bg-white/80 p-2 font-semibold text-teal-800">{glossaryFormula}</p>
+                    <p className="mt-2 leading-relaxed">{glossaryConclusion}</p>
+                  </div>
+                )}
               </div>
 
               {shouldShowToggle && (
@@ -274,24 +292,6 @@ export default function JourneyMap({ onClose }) {
                 >
                   {isExpanded ? t('journey.buttons.readLess') : t('journey.buttons.readMore')}
                 </button>
-              )}
-
-              {isGlossaryIsland && showGlossary && (
-                <div className="mt-3 rounded-xl border border-teal-200 bg-teal-50 p-3 text-left text-xs text-slate-700">
-                  <p className="flex items-center gap-2 font-semibold text-teal-700">
-                    <Bot size={14} />
-                    {glossaryTitle}
-                  </p>
-                  <p className="mt-2 leading-relaxed">{glossaryIntro}</p>
-                  <p className="mt-2 font-semibold">{glossaryPartsTitle}</p>
-                  <ul className="mt-1 space-y-1.5 pl-4">
-                    {safeGlossaryParts.map((part, idx) => (
-                      <li key={`${part}-${idx}`} className="list-disc leading-relaxed">{part}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-2 rounded-md bg-white/80 p-2 font-semibold text-teal-800">{glossaryFormula}</p>
-                  <p className="mt-2 leading-relaxed">{glossaryConclusion}</p>
-                </div>
               )}
             </div>
           </div>
